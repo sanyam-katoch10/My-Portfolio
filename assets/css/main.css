@@ -3488,20 +3488,6 @@ html {
 
 @media (max-width: 768px) {
   .terminal-hint {
-    display: flex;
-
-    bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    width: max-content;
-    left: auto;
-    animation: hintFadeInMobile 1s ease-out 1s forwards;
-  }
-
-  @keyframes hintFadeInMobile {
-    to {
-      opacity: 1;
-      transform: translateX(50%) translateY(0);
-    }
+    display: none;
   }
 }
