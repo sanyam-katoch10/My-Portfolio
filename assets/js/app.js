@@ -96,12 +96,13 @@ const skillsData = [
   { name: "GitHub", icon: "https://img.icons8.com/fluency/48/github.png" },
   { name: "Linux", icon: "https://img.icons8.com/color/48/linux--v1.png" },
   { name: "Kali Linux", icon: "https://img.icons8.com/color/48/kali-linux.png" },
+  { name: "Docker", icon: "https://img.icons8.com/color/48/docker.png" },
   { name: "VS Code", icon: "https://img.icons8.com/color/48/visual-studio-code-2019.png" },
   { name: "Jupyter", icon: "https://img.icons8.com/fluency/48/jupyter.png" },
   { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.svg" },
   { name: "Google Cloud", icon: "https://img.icons8.com/color/48/google-cloud.png" },
   { name: "Render", icon: "https://img.icons8.com/ios-filled/50/40C4FF/render.png" },
-  
+  { name: "AWS", icon: "https://img.icons8.com/color/48/amazon-web-services.png" }
 ];
 
 const skillsContainer = document.getElementById("skillsContainer");
@@ -758,5 +759,6 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
 
 
