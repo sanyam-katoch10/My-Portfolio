@@ -78,10 +78,18 @@ const skillsData = [
   { name: "Pandas", icon: "https://img.icons8.com/color/48/pandas.png" },
   { name: "OpenCV", icon: "https://img.icons8.com/color/48/opencv.png" },
   { name: "Matplotlib", icon: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" },
-
+  { name: "Seaborn", icon: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
+ { name: "SciPy", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" },
+  { name: "Pillow", icon: "https://img.icons8.com/color/48/image--v1.png" },
+  { name: "NLTK", icon: "https://img.icons8.com/color/48/chat--v1.png" },
 
   { name: "MySQL", icon: "https://img.icons8.com/color/48/mysql-logo.png" },
-  { name: "MongoDB", icon: "https://img.icons8.com/color/48/mongodb.png" },
+ { name: "PL/SQL", icon: "https://img.icons8.com/color/48/oracle-logo.png" },
+
+  
+  { name: "Flask", icon: "https://img.icons8.com/fluency/48/flask.png" },
+  { name: "FastAPI", icon: "https://img.icons8.com/color/48/fastapi.png" },
+
 
 
   { name: "Git", icon: "https://img.icons8.com/color/48/git.png" },
@@ -91,7 +99,9 @@ const skillsData = [
   { name: "VS Code", icon: "https://img.icons8.com/color/48/visual-studio-code-2019.png" },
   { name: "Jupyter", icon: "https://img.icons8.com/fluency/48/jupyter.png" },
   { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.svg" },
-  { name: "Google Cloud", icon: "https://img.icons8.com/color/48/google-cloud.png" }
+  { name: "Google Cloud", icon: "https://img.icons8.com/color/48/google-cloud.png" },
+  { name: "Render", icon: "https://img.icons8.com/ios-filled/50/40C4FF/render.png" },
+  
 ];
 
 const skillsContainer = document.getElementById("skillsContainer");
@@ -748,4 +758,5 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
 
