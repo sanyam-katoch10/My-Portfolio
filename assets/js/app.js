@@ -80,15 +80,16 @@ const skillsData = [
   { name: "Matplotlib", icon: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" },
   { name: "Seaborn", icon: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
  { name: "SciPy", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" },
-  { name: "Pillow", icon: "https://img.icons8.com/color/48/image--v1.png" },
-  { name: "NLTK", icon: "https://img.icons8.com/color/48/chat--v1.png" },
+  { name: "Pillow", icon: "https://img.icons8.com/color/48/image.png" },
+  { name: "NLTK", icon: "https://img.icons8.com/color/48/chat.png" },
 
   { name: "MySQL", icon: "https://img.icons8.com/color/48/mysql-logo.png" },
  { name: "PL/SQL", icon: "https://img.icons8.com/color/48/oracle-logo.png" },
 
   
   { name: "Flask", icon: "https://img.icons8.com/fluency/48/flask.png" },
-  { name: "FastAPI", icon: "https://img.icons8.com/color/48/fastapi.png" },
+   { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+
 
 
 
@@ -101,7 +102,7 @@ const skillsData = [
   { name: "Jupyter", icon: "https://img.icons8.com/fluency/48/jupyter.png" },
   { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.svg" },
   { name: "Google Cloud", icon: "https://img.icons8.com/color/48/google-cloud.png" },
-  { name: "Render", icon: "https://img.icons8.com/ios-filled/50/40C4FF/render.png" },
+  { name: "Render", icon: "https://cdn.simpleicons.org/render/40C4FF" },
   { name: "AWS", icon: "https://img.icons8.com/color/48/amazon-web-services.png" }
 ];
 
@@ -759,6 +760,7 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
 
 
 
