@@ -159,7 +159,7 @@ const projectsData = [
   {
     name: "MiniGit — Version Control System",
     desc: "A web-based version control system built from scratch using 7 core Data Structures & Algorithms — no external DS libraries. Features branching, merging, undo/redo, commit history via binary trees, and multi-repository support. Powered by a FastAPI backend with 17 REST endpoints and an interactive terminal UI that mimics a real Git CLI in the browser.",
-    tags: ["C++", "Python", "FastAPI", "DSA", "REST API"],
+    tags: ["C++", "Python", "FastAPI", "DSA", "Render"],
     icon: "fas fa-code-branch",
     github: "https://github.com/sanyam-katoch10/Mini-Git-Version-Control-System",
     demo: "https://mini-git-dsa.onrender.com"
@@ -760,6 +760,7 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
 
 
 
