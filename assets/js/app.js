@@ -160,7 +160,7 @@ const projectsData = [
     name: "MiniGit — Version Control System",
     desc: "A web-based version control system built from scratch using 7 core Data Structures & Algorithms — no external DS libraries. Features branching, merging, undo/redo, commit history via binary trees, and multi-repository support. Powered by a FastAPI backend with 17 REST endpoints and an interactive terminal UI that mimics a real Git CLI in the browser.",
     tags: ["C++", "Python", "FastAPI", "DSA", "Render"],
-    icon: "fas fa-code-branch",
+    image: "assets/images/minigit.png",
     github: "https://github.com/sanyam-katoch10/Mini-Git-Version-Control-System",
     demo: "https://mini-git-dsa.onrender.com"
   },
@@ -168,7 +168,7 @@ const projectsData = [
     name: "BotShield — ML CAPTCHA Refinement System",
     desc: "An ML-powered CAPTCHA refinement system that intelligently generates, classifies, and adjusts CAPTCHA difficulty using a CNN classifier trained on 6,000 labeled images with 97% validation accuracy. Features an adaptive Predict → Adjust → Re-generate → Finalize loop that dynamically fine-tunes complexity to balance human accessibility with maximum bot resistance.",
     tags: ["CNN", "TensorFlow", "Keras", "Streamlit", "Python"],
-    icon: "fas fa-shield-alt",
+    image: "assets/images/botshield.png",
     github: "https://github.com/sanyam-katoch10/BOtShield_ML-CAPTCHA-Refinement-System",
     demo: "https://bot0shield.streamlit.app/"
   },
@@ -176,7 +176,7 @@ const projectsData = [
     name: "SegVision — PSO Image Segmentation",
     desc: "A PSO-powered image segmentation web app that segments images into meaningful color regions using a custom-built Particle Swarm Optimization engine. Encodes pixels as 5D spatial feature vectors [R,G,B,x,y] for perceptually coherent segments, with KMeans++ warm-start seeding, real-time SSE progress streaming, and non-blocking threaded backend. Deployed on Railway.",
     tags: ["Python", "Flask", "NumPy", "OpenCV", "PSO", "SSE"],
-    icon: "fas fa-eye",
+    image: "assets/images/segvision.png",
     github: "https://github.com/sanyam-katoch10/SegViSion_PSO_Image_Segmentation_System",
     demo: "https://segvision.up.railway.app"
   }
@@ -760,6 +760,7 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
 
 
 
