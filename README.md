@@ -1,4 +1,4 @@
-# Hi there, I'm Sanyam Katoch! 👋
+# Hi there, I'm Sanyam Katoch! 
 
 <div align="center">
     <a href="https://sanyamportfolio.netlify.app/" target="_blank">
