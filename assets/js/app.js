@@ -79,25 +79,26 @@ const skillsData = [
   { name: "OpenCV", icon: "https://img.icons8.com/color/48/opencv.png" },
   { name: "Matplotlib", icon: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" },
   { name: "Seaborn", icon: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" },
- { name: "SciPy", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" },
+  { name: "SciPy", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" },
   { name: "Pillow", icon: "https://img.icons8.com/color/48/image.png" },
   { name: "NLTK", icon: "https://img.icons8.com/color/48/chat.png" },
 
+
   { name: "MySQL", icon: "https://img.icons8.com/color/48/mysql-logo.png" },
- { name: "PL/SQL", icon: "https://img.icons8.com/color/48/oracle-logo.png" },
+  { name: "PL/SQL", icon: "https://img.icons8.com/color/48/oracle-logo.png" },
 
-  
+
+
   { name: "Flask", icon: "https://img.icons8.com/fluency/48/flask.png" },
-   { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+  { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
 
 
 
-
+  { name: "Docker", icon: "https://img.icons8.com/color/48/docker.png" },
   { name: "Git", icon: "https://img.icons8.com/color/48/git.png" },
   { name: "GitHub", icon: "https://img.icons8.com/fluency/48/github.png" },
   { name: "Linux", icon: "https://img.icons8.com/color/48/linux--v1.png" },
   { name: "Kali Linux", icon: "https://img.icons8.com/color/48/kali-linux.png" },
-  { name: "Docker", icon: "https://img.icons8.com/color/48/docker.png" },
   { name: "VS Code", icon: "https://img.icons8.com/color/48/visual-studio-code-2019.png" },
   { name: "Jupyter", icon: "https://img.icons8.com/fluency/48/jupyter.png" },
   { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.svg" },
@@ -170,7 +171,7 @@ const projectsData = [
     tags: ["CNN", "TensorFlow", "Keras", "Streamlit", "Python"],
     image: "assets/images/botshield.png",
     github: "https://github.com/sanyam-katoch10/BOtShield_ML-CAPTCHA-Refinement-System",
-    demo: "https://bot0shield.streamlit.app/"
+    demo: "https://botshield0captcha-sam.streamlit.app/"
   },
   {
     name: "SegVision — PSO Image Segmentation",
@@ -195,7 +196,7 @@ if (projectsContainer) {
 
     div.innerHTML = `
       <div class="project-image">
-        <i class="${project.icon}"></i>
+        <img src="${project.image}" alt="${project.name}">
       </div>
       <div class="project-content">
         <h3>${project.name}</h3>
@@ -760,9 +761,3 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
-
-
-
-
-
-
