@@ -6,7 +6,6 @@
     </a>
 </div>
 
-
 I am an **AI & ML Engineer** and a Computer Science student specializing in Deep Learning, Computer Vision, and intelligent automation. I am passionate about building practical AI solutions and understanding how machines perceive the world.
 
 ## 🚀 About Me
