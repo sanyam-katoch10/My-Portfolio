@@ -1,105 +1,197 @@
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║     ███████  █████  ███    ██ ██    ██  █████  ███    ███        ║
+║     ██      ██   ██ ████   ██  ██  ██  ██   ██ ████  ████        ║
+║     ███████ ███████ ██ ██  ██   ████   ███████ ██ ████ ██        ║
+║          ██ ██   ██ ██  ██ ██    ██    ██   ██ ██  ██  ██        ║
+║     ███████ ██   ██ ██   ████    ██    ██   ██ ██      ██        ║
+║                                                                  ║
+║                    K A T O C H   //  P O R T F O L I O           ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
 <div align="center">
 
-# ⚡ SANYAM KATOCH — Portfolio
+> *`[ SYSTEM ONLINE ]`* — *Forging Digital Minds*
 
-### *Forging Digital Minds*
-
-[![Live Portfolio](https://img.shields.io/badge/⚡_Live_Portfolio-View_Here-000000?style=for-the-badge&logo=spacex&logoColor=00f2ff&color=000000&labelColor=00f2ff)](https://sanyamportfolio.netlify.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-sanyam--katoch10-181717?style=for-the-badge&logo=github)](https://github.com/sanyam-katoch10)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanyam_Katoch-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sanyam-katoch/)
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00F2FF&center=true&vCenter=true&width=500&lines=AI+%26+ML+Engineer;Deep+Learning+Enthusiast;Computer+Vision+Explorer;Building+Intelligent+Systems" alt="Typing SVG" />
+[![ENTER PORTAL](https://img.shields.io/badge/▶_ENTER_PORTAL-00f2ff?style=for-the-badge&logo=spacex&logoColor=000)](https://sanyamportfolio.netlify.app/)
 
 </div>
 
 ---
 
-## 🧠 About
+### `> whoami`
 
-Hi there! I'm **Sanyam Katoch** — an **AI & ML Engineer** and Computer Science student specializing in Deep Learning, Computer Vision, and intelligent automation. I'm passionate about building practical AI solutions and understanding how machines perceive the world.
-
-- 🎓 **B.Tech CSE (AI & ML)** — Lovely Professional University *(2023 – 2027)*
-- 🌍 **Location** — Palampur, Himachal Pradesh, India
-- 💡 **Interests** — Machine Learning, Deep Learning, NLP, Computer Vision, Data Analysis
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Tech Stack | Links |
-|---------|-------------|------------|-------|
-| **MiniGit — Version Control System** | A web-based VCS built from scratch using 7 core DSA concepts. Features branching, merging, undo/redo, commit history, and multi-repo support with a FastAPI backend (17 REST endpoints) and interactive terminal UI. | `C++` `Python` `FastAPI` `DSA` `REST API` | [Code](https://github.com/sanyam-katoch10/Mini-Git-Version-Control-System) · [Demo](https://mini-git-dsa.onrender.com) |
-| **BotShield — ML CAPTCHA Refinement** | ML-powered CAPTCHA system that generates, classifies, and adjusts difficulty using a CNN classifier (97% accuracy on 6,000 labeled images). Features an adaptive Predict → Adjust → Re-generate → Finalize loop. | `CNN` `TensorFlow` `Keras` `Streamlit` `Python` | [Code](https://github.com/sanyam-katoch10/BOtShield_ML-CAPTCHA-Refinement-System) · [Demo](https://botshield0captcha-sam.streamlit.app/) |
-| **SegVision — PSO Image Segmentation** | PSO-powered image segmentation using custom Particle Swarm Optimization with 5D spatial feature vectors, KMeans++ warm-start seeding, real-time SSE streaming, and non-blocking threaded backend. | `Python` `Flask` `NumPy` `OpenCV` `PSO` `SSE` | [Code](https://github.com/sanyam-katoch10/SegViSion_PSO_Image_Segmentation_System) · [Demo](https://segvision.up.railway.app) |
+```yaml
+Name     : Sanyam Katoch
+Role     : AI & ML Engineer
+Location : Palampur, Himachal Pradesh, India
+Education: B.Tech CSE (AI & ML) @ Lovely Professional University [2023 - 2027]
+Status   : Building intelligent systems
+```
 
 ---
 
-## 🛠️ Tech Stack
+### `> cat interests.txt`
 
-<table>
-<tr>
-<td><b>Languages</b></td>
-<td>Python · C++ · C · Java · HTML5 · CSS3</td>
-</tr>
-<tr>
-<td><b>AI / ML</b></td>
-<td>TensorFlow · Keras · PyTorch · Scikit-learn · OpenCV · NLTK</td>
-</tr>
-<tr>
-<td><b>Data Science</b></td>
-<td>NumPy · Pandas · Matplotlib · Seaborn · SciPy · Pillow</td>
-</tr>
-<tr>
-<td><b>Databases</b></td>
-<td>MySQL · PL/SQL</td>
-</tr>
-<tr>
-<td><b>Frameworks</b></td>
-<td>Flask · FastAPI · Streamlit</td>
-</tr>
-<tr>
-<td><b>DevOps & Tools</b></td>
-<td>Docker · Git · GitHub · Linux · Kali Linux · VS Code · Jupyter</td>
-</tr>
-<tr>
-<td><b>Cloud</b></td>
-<td>Google Cloud · AWS · Render · Railway</td>
-</tr>
-</table>
+```
+Machine Learning ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100%
+Deep Learning    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  90%
+Computer Vision  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░  85%
+NLP              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░  75%
+Data Analysis    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  80%
+```
 
 ---
 
-## 🎓 Certifications
+### `> ls projects/`
 
-- 📜 **Data Structures and Algorithms** — Udemy
-- 📜 **Deep Learning Fundamentals with Keras** — edX
-- 📜 **Software Development Processes** — University of Minnesota
+<details>
+<summary>📂 <b>MiniGit — Version Control System</b></summary>
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  A web-based VCS built from scratch using 7 core DSA       │
+│  concepts — no external DS libraries.                      │
+│                                                             │
+│  ► Branching, merging, undo/redo, commit history            │
+│  ► FastAPI backend with 17 REST endpoints                   │
+│  ► Interactive terminal UI mimicking real Git CLI            │
+│  ► Multi-repository support                                 │
+│                                                             │
+│  STACK: C++ · Python · FastAPI · DSA · REST API             │
+├─────────────────────────────────────────────────────────────┤
+│  [CODE] github.com/sanyam-katoch10/Mini-Git-VCS             │
+│  [DEMO] mini-git-dsa.onrender.com                           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+[Source Code](https://github.com/sanyam-katoch10/Mini-Git-Version-Control-System) · [Live Demo](https://mini-git-dsa.onrender.com)
+
+</details>
+
+<details>
+<summary>📂 <b>BotShield — ML CAPTCHA Refinement System</b></summary>
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  ML-powered CAPTCHA system that generates, classifies,      │
+│  and adjusts difficulty with 97% validation accuracy.       │
+│                                                             │
+│  ► CNN classifier trained on 6,000 labeled images           │
+│  ► Adaptive: Predict → Adjust → Re-generate → Finalize     │
+│  ► Dynamic complexity tuning for bot resistance             │
+│                                                             │
+│  STACK: CNN · TensorFlow · Keras · Streamlit · Python       │
+├─────────────────────────────────────────────────────────────┤
+│  [CODE] github.com/sanyam-katoch10/BOtShield                │
+│  [DEMO] botshield0captcha-sam.streamlit.app                 │
+└─────────────────────────────────────────────────────────────┘
+```
+
+[Source Code](https://github.com/sanyam-katoch10/BOtShield_ML-CAPTCHA-Refinement-System) · [Live Demo](https://botshield0captcha-sam.streamlit.app/)
+
+</details>
+
+<details>
+<summary>📂 <b>SegVision — PSO Image Segmentation</b></summary>
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  PSO-powered image segmentation with custom Particle        │
+│  Swarm Optimization engine.                                 │
+│                                                             │
+│  ► 5D spatial feature vectors [R,G,B,x,y]                   │
+│  ► KMeans++ warm-start seeding                              │
+│  ► Real-time SSE progress streaming                         │
+│  ► Non-blocking threaded backend on Railway                 │
+│                                                             │
+│  STACK: Python · Flask · NumPy · OpenCV · PSO · SSE         │
+├─────────────────────────────────────────────────────────────┤
+│  [CODE] github.com/sanyam-katoch10/SegViSion                │
+│  [DEMO] segvision.up.railway.app                            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+[Source Code](https://github.com/sanyam-katoch10/SegViSion_PSO_Image_Segmentation_System) · [Live Demo](https://segvision.up.railway.app)
+
+</details>
 
 ---
 
-## ✨ Portfolio Highlights
+### `> cat tech_stack.conf`
 
-This portfolio website is a fully custom-built, cyberpunk-themed experience featuring:
+```ini
+[languages]
+Python, C++, C, Java, HTML5, CSS3
 
-- 🎨 **Dark/Light mode** with persistent theme toggle
-- ⌨️ **Command-line terminal** (`Ctrl + K`) for keyboard-driven navigation
-- 🔊 **Sound effects** — hover & click audio feedback via Web Audio API
-- � **GSAP animations** — scroll-triggered reveals, tilt effects, and smooth transitions
-- 📱 **Fully responsive** — mobile-first design with hamburger menu
-- 🔌 **Offline-ready** — graceful degradation with slow-network detection
-- 📬 **Contact form** — powered by Web3Forms
+[ai_ml]
+TensorFlow, Keras, PyTorch, Scikit-learn, OpenCV, NLTK
+
+[data_science]
+NumPy, Pandas, Matplotlib, Seaborn, SciPy, Pillow
+
+[databases]
+MySQL, PL/SQL
+
+[frameworks]
+Flask, FastAPI, Streamlit
+
+[devops]
+Docker, Git, GitHub, Linux, Kali Linux, VS Code, Jupyter
+
+[cloud]
+Google Cloud, AWS, Render, Railway
+```
 
 ---
 
-## 📫 Get in Touch
+### `> cat certifications.log`
+
+```
+[✓] Data Structures and Algorithms .............. Udemy
+[✓] Deep Learning Fundamentals with Keras ....... edX
+[✓] Software Development Processes .............. University of Minnesota
+```
+
+---
+
+### `> cat site_features.md`
+
+```diff
++ Dark / Light mode toggle with persistence
++ Command-line terminal (Ctrl + K) navigation
++ Sound FX — hover & click via Web Audio API
++ GSAP scroll-triggered animations & tilt effects
++ Fully responsive mobile-first design
++ Offline-ready with slow-network graceful fallback
++ Contact form powered by Web3Forms
+```
+
+---
+
+### `> cat contact.sh`
+
+```bash
+#!/bin/bash
+
+EMAIL="sanyamkatoch10@gmail.com"
+GITHUB="https://github.com/sanyam-katoch10"
+LINKEDIN="https://www.linkedin.com/in/sanyam-katoch/"
+
+echo "Pick your channel:"
+echo "  [1] $EMAIL"
+echo "  [2] $GITHUB"
+echo "  [3] $LINKEDIN"
+```
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-sanyamkatoch10@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sanyamkatoch10@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sanyam--katoch-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sanyam-katoch/)
-[![GitHub](https://img.shields.io/badge/GitHub-sanyam--katoch10-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sanyam-katoch10)
+[![Email](https://img.shields.io/badge/Gmail-sanyamkatoch10-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sanyamkatoch10@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-sanyam--katoch10-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/sanyam-katoch10)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sanyam--katoch-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sanyam-katoch/)
 
 </div>
 
@@ -107,6 +199,8 @@ This portfolio website is a fully custom-built, cyberpunk-themed experience feat
 
 <div align="center">
 
-*Built with ❤️ by Sanyam Katoch — © 2026*
+```
+[ SESSION END ] — Built with ❤️ by Sanyam Katoch — © 2026
+```
 
 </div>
