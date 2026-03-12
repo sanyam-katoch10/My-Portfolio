@@ -405,7 +405,7 @@ document.querySelectorAll('.project-card').forEach(card => {
   card.classList.add('holo-card');
 });
 
-console.log('🔥 Hacker mode activated');
+console.log(' Hacker mode activated');
 
 
 const decodeText = document.querySelector('.decode-text');
@@ -506,4 +506,5 @@ if (cursorCanvas) {
   animateCursor();
 }
 
-console.log('✅ Ghost Cursor Activated');
+console.log(' Ghost Cursor Activated');
+
