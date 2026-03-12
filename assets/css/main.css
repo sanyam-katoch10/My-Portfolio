@@ -226,17 +226,10 @@ body.light-mode #bg-grid-layer {
 .anime-eye-svg {
   width: 100%;
   height: 100%;
-  overflow: visible; /* To allow glow effects to spill out cleanly */
+  overflow: visible; 
 }
 
-/* 
-  The White Sclera, Eyelashes, and Blink Lid 
-  are now drawn with flawless mathematical SVG paths 
-  in HTML, meaning we only need to handle the CSS 
-  animations that live INSIDE the <foreignObject> here.
-*/
 
-/* Hollow Eyeball container - Moves around the transparent socket! */
 .hollow-eyeball {
   position: relative;
   width: 100%;
@@ -244,13 +237,11 @@ body.light-mode #bg-grid-layer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Major eye movements (looking around the hollow socket) */
+ 
   animation: lookAroundHollow 8s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Because the eyeball is massive now, we reduce the travel distance 
-   so it doesn't clip out of the socket entirely and still looks dangerous/heavy */
-/* Increased travel distance for larger scale watching effect */
+
 @keyframes lookAroundHollow {
   0%, 15%   { transform: translate(0, 0); }
   20%, 35%  { transform: translate(30px, -10px); } 
@@ -260,10 +251,10 @@ body.light-mode #bg-grid-layer {
   95%, 100% { transform: translate(0, 0); }
 }
 
-/* The Iris - Hacker Eye circle glowing brightly */
+
 .hollow-iris {
   position: absolute;
-  /* Massive iris size so it gets cropped by top and bottom lids (dangerous feel) */
+  
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -275,7 +266,7 @@ body.light-mode #bg-grid-layer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Minor saccadic twitches layered on top of the big looking around movements */
+  
   animation: svgGeassTwitch 5s infinite cubic-bezier(0.25, 1, 0.5, 1);
   z-index: 5;
 }
@@ -288,7 +279,7 @@ body.light-mode #bg-grid-layer {
   92%, 100% { transform: translate(0, 0); }
 }
 
-/* Hacker tech ring */
+
 .iris-tech-ring {
   position: absolute;
   width: 86%;
@@ -314,7 +305,7 @@ body.light-mode #bg-grid-layer {
   100% { transform: rotate(360deg); }
 }
 
-/* The Pupil */
+
 .eye-pupil {
   position: absolute;
   width: 25%;
@@ -330,7 +321,7 @@ body.light-mode #bg-grid-layer {
   100% { transform: scale(1.4); box-shadow: 0 0 25px rgba(0, 255, 122, 1); }
 }
 
-/* Sharp Anime Catchlights */
+
 .eye-glare {
   position: absolute;
   top: 15%;
@@ -344,7 +335,7 @@ body.light-mode #bg-grid-layer {
   z-index: 10;
 }
 
-/* Secondary smaller catchlight */
+
 .eye-glare::after {
   content: '';
   position: absolute;
@@ -357,7 +348,7 @@ body.light-mode #bg-grid-layer {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
-/* Scanning Laser Line (Runs over the whole foreignObject) */
+
 .eye-scanline {
   position: absolute;
   top: 0;
@@ -379,9 +370,9 @@ body.light-mode #bg-grid-layer {
   100% { top: 110%; opacity: 0; }
 }
 
-/* Eyelid Blink Cover Animation (Targeting the SVG PATH) */
+
 .blink-lid {
-  transform-origin: 250px 0px; /* Top center of the SVG 500x250 viewBox */
+  transform-origin: 250px 0px; 
   animation: svgBlink 6s infinite;
 }
 
@@ -390,7 +381,7 @@ body.light-mode #bg-grid-layer {
   95%                { transform: scaleY(1); }
 }
 
-/* --- ROBOT CSS RESTORED --- */
+
 .ai-face-glitch {
   position: relative;
   animation: robotGlitchEnhanced 1.5s ease-out forwards;
@@ -1188,13 +1179,6 @@ body::before {
   }
 }
 
-
-
-
-
-
-
-
 .navbar-logo {
   height: 50px;
   width: auto;
@@ -1264,7 +1248,7 @@ body::before {
   background: var(--neon-glow) !important;
   border: 1px solid var(--neon-glow) !important;
   
-  /* Tactical Beveled Clip */
+  
   clip-path: polygon(
     0% 0%, 
     90% 0%, 
@@ -1278,13 +1262,13 @@ body::before {
   transition: all 0.3s var(--ease-smooth);
 }
 
-/* Light Mode Adaptations */
+
 body.light-mode .resume-btn-nav {
   background: rgba(16, 163, 127, 0.05) !important;
   border-color: rgba(16, 163, 127, 0.4) !important;
 }
 
-/* Corner Accents (Brackets) */
+
 .resume-btn-nav::before,
 .resume-btn-nav::after {
   content: '';
@@ -1888,7 +1872,7 @@ body.light-mode .timeline::after {
   width: 50%;
   box-sizing: border-box;
   opacity: 1;
-  /* Default visible, GSAP will handle the entrance */
+
 }
 
 .timeline-container.left {
@@ -2138,7 +2122,7 @@ body.light-mode .cert-desc {
   box-shadow: 0 0 15px var(--neon-glow);
 }
 
-/* ---- Certificate Section: Light Mode ---- */
+
 
 body.light-mode .certificates-section {
   background: rgba(0, 0, 0, 0.02);
@@ -2290,7 +2274,7 @@ body.light-mode .cert-vw-btn:hover {
   letter-spacing: 0.5px;
 }
 
-/* Soft Skill Cards */
+
 .soft-skill-bar {
   background: linear-gradient(135deg, var(--glass), rgba(0, 255, 122, 0.03)) !important;
 }
@@ -2602,7 +2586,7 @@ body.light-mode .cert-vw-btn:hover {
   border-top: 1px solid var(--neon);
   border-bottom: 1px solid var(--glass-border);
   padding: 12px 0;
-  /* Slightly more padding for bigger font */
+  
   margin-top: 20px;
 
 
@@ -2641,7 +2625,7 @@ body.light-mode .cert-vw-btn:hover {
   align-items: center;
   gap: 80px;
   padding-right: 80px;
-  /* Balance the gap for perfect 50% loop */
+
   width: max-content;
   animation: tickerScroll 13s linear infinite;
   box-sizing: border-box;
@@ -3986,7 +3970,7 @@ button[type="submit"]:disabled {
   gap: 20px;
   z-index: 100;
   pointer-events: none;
-  /* Let clicks pass through if needed, but spy-items have pointer-events: auto */
+  
 }
 
 .spy-item {
@@ -4306,3 +4290,4 @@ html {
     display: none;
   }
 }
+
