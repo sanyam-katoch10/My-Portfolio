@@ -366,14 +366,13 @@ if (certificatesContainer) {
     certificatesContainer.appendChild(div);
   });
 
-  // Refresh ScrollTrigger so animations.js peek-a-boo picks up these new elements
+  
   if (typeof ScrollTrigger !== 'undefined') {
     ScrollTrigger.refresh();
   }
 }
 
 
-// Achievements Data & Rendering
 const achievementsData = [
   {
     icon: "fas fa-code",
@@ -613,7 +612,7 @@ if (contactForm) {
   });
 }
 
-console.log('🚀 Portfolio loaded successfully');
+console.log(' Portfolio loaded successfully');
 
 
 
@@ -947,3 +946,4 @@ function initThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+
