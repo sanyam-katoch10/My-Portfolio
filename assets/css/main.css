@@ -1252,6 +1252,85 @@ body::before {
   background: rgba(0, 255, 122, 0.1);
 }
 
+/* Premium Career-Mode Resume Button */
+.resume-btn-nav {
+  margin-left: 15px;
+  padding: 10px 22px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--neon) !important;
+  background: var(--neon-glow) !important;
+  border: 1px solid var(--neon-glow) !important;
+  
+  /* Tactical Beveled Clip */
+  clip-path: polygon(
+    0% 0%, 
+    90% 0%, 
+    100% 30%, 
+    100% 100%, 
+    10% 100%, 
+    0% 70%
+  );
+  
+  position: relative;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+/* Light Mode Adaptations */
+body.light-mode .resume-btn-nav {
+  background: rgba(16, 163, 127, 0.05) !important;
+  border-color: rgba(16, 163, 127, 0.4) !important;
+}
+
+/* Corner Accents (Brackets) */
+.resume-btn-nav::before,
+.resume-btn-nav::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--neon);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.resume-btn-nav::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.resume-btn-nav::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.resume-btn-nav:hover {
+  background: rgba(0, 255, 122, 0.1) !important;
+  border-color: var(--neon) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 122, 0.2);
+  transform: translateY(-2px);
+  animation: miniGlitch 0.3s infinite;
+}
+
+.resume-btn-nav:hover::before,
+.resume-btn-nav:hover::after {
+  opacity: 1;
+  box-shadow: 0 0 10px var(--neon);
+}
+
+@keyframes miniGlitch {
+  0% { transform: translate(0, -2px); text-shadow: 1px 0 #ff0000, -1px 0 #00ffff; }
+  25% { transform: translate(-1px, -1px); }
+  50% { transform: translate(1px, -3px); text-shadow: -1px 0 #ff0000, 1px 0 #00ffff; }
+  75% { transform: translate(-1px, -2px); }
+  100% { transform: translate(0, -2px); }
+}
 
 
 section {
@@ -3507,6 +3586,15 @@ body.light-mode .cert-vw-btn:hover {
     display: block;
     padding: 15px;
     font-size: 16px;
+  }
+
+  .nav ul li a.resume-btn-nav {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    padding: 12px 25px !important;
   }
 
   .home {
