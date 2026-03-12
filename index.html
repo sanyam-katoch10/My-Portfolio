@@ -47,7 +47,7 @@
     function activateSlowNetMode() {
       var loader = document.getElementById('loader');
       var connectingForSlowNet = document.getElementById('slow-net-msg');
-      var bookLoader = document.querySelector('.cyber-book-loader');
+      var eyeLoader = document.getElementById('giant-matrix-eye');
       var robotContainer = document.querySelector('.ai-face-glitch');
       var cssRobot = document.getElementById('css-robot');
       var runningImg = document.getElementById('running-robot-img');
@@ -57,7 +57,7 @@
 
       if (connectingForSlowNet) connectingForSlowNet.style.display = 'block';
 
-      if (bookLoader) bookLoader.style.display = 'none';
+       if (eyeLoader) eyeLoader.style.display = 'none';
       if (runningImg) runningImg.style.display = 'none';
       if (cssRobot) cssRobot.style.display = 'block';
 
@@ -712,6 +712,7 @@
   <div id="noise-overlay"></div>
 
 </body>
+
 
 
 </html>
