@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SANYAM KATOCH | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sanyam Katoch - AI & ML Engineer specializing in Deep Learning, Computer Vision, and intelligent automation. Building practical AI solutions." />
+  <meta name="keywords"
+    content="sanyam katoch, portfolio, ML engineer, AI engineer, machine learning, deep learning, computer vision, natural language processing, NLP, data analysis" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <script>
+    window.scrollTo(0, 0);
+
+
+    window.isLoaded = false;
+
+    window.addEventListener('load', function () {
+      window.isLoaded = true;
+    });
+
+    function activateSlowNetMode() {
+      var loader = document.getElementById('loader');
+      var connectingForSlowNet = document.getElementById('slow-net-msg');
+      var bookLoader = document.querySelector('.cyber-book-loader');
+      var robotContainer = document.querySelector('.ai-face-glitch');
+      var cssRobot = document.getElementById('css-robot');
+      var runningImg = document.getElementById('running-robot-img');
+      var entranceMsg = document.querySelector('.entrance-message');
+
+      if (loader) loader.classList.remove('hidden');
+
+      if (connectingForSlowNet) connectingForSlowNet.style.display = 'block';
+
+      if (bookLoader) bookLoader.style.display = 'none';
+      if (runningImg) runningImg.style.display = 'none';
+      if (cssRobot) cssRobot.style.display = 'block';
+
+      if (robotContainer) {
+        robotContainer.classList.add('running-mode');
+        robotContainer.classList.remove('scanning');
+      }
+
+      if (entranceMsg) entranceMsg.style.display = 'none';
+    }
+
+    function scrambleText(element) {
+      if (!element) return;
+
+      const originalText = element.getAttribute('data-text') || element.textContent;
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&";
+      let iteration = 0;
+      let interval = null;
+
+      clearInterval(interval);
+
+      interval = setInterval(() => {
+        const newText = originalText
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return originalText[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        element.innerText = newText;
+
+
+        if (iteration >= originalText.length) {
+          clearInterval(interval);
+          element.innerText = originalText;
+        }
+
+        iteration += 1 / 3;
+      }, 30);
+    }
+
+    function deactivateLoader() {
+      var loader = document.getElementById('loader');
+      if (loader) loader.classList.add('hidden');
+      window.scrollTo(0, 0);
+
+
+      var logo = document.querySelector('.logo');
+      var logoText = document.querySelector('.logo-text');
+
+      if (logo) {
+        logo.classList.add('anim-active');
+
+
+        setTimeout(() => {
+          if (logoText) scrambleText(logoText);
+        }, 3200);
+
+
+        setTimeout(() => {
+          logo.classList.remove('anim-active');
+        }, 4000);
+      }
+    }
+
+    if (!navigator.onLine) {
+      activateSlowNetMode();
+    }
+
+    window.addEventListener('offline', activateSlowNetMode);
+    window.addEventListener('online', function () {
+      if (window.isLoaded) {
+        deactivateLoader();
+      }
+    });
+
+    setTimeout(function () {
+      if (window.isLoaded) {
+        deactivateLoader();
+      } else {
+        activateSlowNetMode();
+        window.addEventListener('load', deactivateLoader);
+      }
+    }, 3500);
+  </script>
+
+
+  <div id="loader" class="loader">
+
+    <div class="loader-scanlines"></div>
+
+
+    <!-- Exact Reference Hollow Anime Eye Loader -->
+    <div class="cyber-eye-loader" id="giant-matrix-eye">
+      <svg class="anime-eye-svg" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- 
+            Exact Hollow Window opening.
+            Inner-left corner: 60,160. Outer-right corner: 460,100.
+          -->
+          <clipPath id="eyeClip">
+            <path d="M 60,160 
+                     C 150,60 300,50 460,100 
+                     C 330,200 150,190 60,160 Z" />
+          </clipPath>
+          
+          <!-- Intense Neon Glow so the black lashes are clearly visible! -->
+          <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00ff7a" flood-opacity="0.9" />
+          </filter>
+        </defs>
+
+        <!-- No sclera background path! Completely transparent. -->
+        <!-- Floating eyeball (CSS animated) hidden behind this clipping mask. -->
+        <foreignObject x="0" y="0" width="500" height="250" clip-path="url(#eyeClip)">
+          <div class="eye-ball hollow-eyeball" xmlns="http://www.w3.org/1999/xhtml">
+            <div class="eye-iris hollow-iris">
+              <div class="iris-tech-ring"></div>
+              <div class="eye-pupil"></div>
+              <div class="eye-glare"></div>
+            </div>
+            <div class="eye-scanline"></div>
+          </div>
+        </foreignObject>
+
+        <!-- 
+          PERFECT SEAMLESS ANIMAE LASHES - Stroke + Filter makes them pop!
+        -->
+        <g stroke="#00ff7a" stroke-width="2" filter="url(#neonGlow)" fill="#040608">
+          
+          <!-- THICK TOP EYELASH (Aggressive, slanted, extremely thick) -->
+          <path class="top-lash" 
+                d="M 60,160 
+                   C 150,60 300,50 460,100 
+                   L 480,115 
+                   C 330,10 120,20 40,170 
+                   Z" />
+          
+          <!-- BOTTOM EYELINER (Thin base curve) -->
+          <path class="bottom-lash" 
+                d="M 60,160 
+                   C 150,190 330,200 460,100 
+                   L 480,115 
+                   C 330,220 140,210 40,170 
+                   Z" />
+
+          <!-- BLOCKY LOWER LASHES (From Reference) -->
+          <g class="blocky-lashes">
+            <path d="M 140,196 L 140,215 L 152,215 L 152,198 Z" />
+            <path d="M 190,202 L 190,222 L 202,222 L 202,205 Z" />
+            <path d="M 250,208 L 250,228 L 262,228 L 262,210 Z" />
+            <path d="M 310,203 L 315,223 L 327,220 L 322,201 Z" />
+            <path d="M 370,185 L 378,203 L 390,198 L 382,175 Z" />
+          </g>
+        </g>
+
+        <!-- Eyelid Blink Cover (must exactly cover the eye hole!) -->
+        <!-- Matches the clipPath precisely -->
+        <path class="blink-lid top-blink" 
+              d="M 60,160 C 150,60 300,50 460,100 C 330,200 150,190 60,160 Z" 
+              fill="#040608" stroke="#00ff7a" stroke-width="2" filter="url(#neonGlow)" />
+      </svg>
+    </div>
+
+    <div class="ai-face-wrapper">
+      <div class="ai-face-glitch">
+        <div id="css-robot" class="css-robot" style="display: none;">
+          <div class="robot-head">
+            <div class="kakashi-hair"></div>
+            <div class="robot-mask"></div>
+            <div class="robot-eye-slit"></div>
+            <div class="robot-headband-knot"></div>
+            <div class="robot-headband-tail long"></div>
+            <div class="robot-headband-tail short"></div>
+          </div>
+          <div class="robot-body">
+            <div class="ninja-belt"></div>
+            <div class="ninja-gear"></div>
+          </div>
+          <div class="robot-arm left"></div>
+          <div class="robot-arm right"></div>
+          <div class="robot-leg left">
+            <div class="robot-foot"></div>
+          </div>
+          <div class="robot-leg right">
+            <div class="robot-foot"></div>
+          </div>
+        </div>
+      </div>
+      <div id="slow-net-msg" class="connecting-text" style="display: none;" role="alert">PLEASE
+        WAIT<br>CONNECTING...</br></div>
+    </div>
+
+
+    <div class="entrance-message">
+      <div class="message-text">ENTERING SANYAM'S DOMAIN</div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="bg-grid-layer"></div>
+  <canvas id="bg-cloud-canvas"></canvas>
+  <div id="bg-token-layer"></div>
+  <canvas id="cursorCanvas"></canvas>
+
+
+  <div class="floating-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+
+      <span class="logo-bracket">&lt;</span><span class="logo-text" data-text="Sanyam">Sanyam</span><span
+        class="logo-bracket">/&gt;</span>
+    </a>
+
+
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+    <div id="theme-toggle" class="theme-toggle">
+      <i class="fas fa-sun"></i>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h2>Hi There,<br />I'm <span class="highlight">Sanyam</span> Katoch</h2>
+      <p>I am into <span class="typing-text" id="roleSwitcher"></span><span class="typing-cursor">|</span></p>
+
+      <a href="#about" class="btn">
+        <span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" href="https://www.linkedin.com/in/sanyam-katoch/" target="_blank"
+              aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" href="https://github.com/sanyam-katoch10" target="_blank" aria-label="GitHub"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="email" href="mailto:sanyamkatoch10@gmail.com" aria-label="Email"><i
+                class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="home-image">
+      <div class="image-container">
+        <div class="image-glow"></div>
+        <img src="assets/images/hero-profile.png" alt="Sanyam Katoch" class="profile-img">
+      </div>
+    </div>
+
+    <div class="terminal-hint">
+      <div class="hint-label">COMMAND LINE</div>
+      <div class="keys-wrapper">
+        <div class="key">CTRL</div>
+        <span class="plus">+</span>
+        <div class="key">K</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+      <div class="about-image">
+        <div class="image-container tilt">
+          <div class="image-glow"></div>
+          <img src="assets/images/about-profile.jpg" alt="Sanyam Katoch" class="profile-img">
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h3>I'm Sanyam Katoch</h3>
+        <span class="tag">AI & ML Engineer</span>
+
+        <p>
+          I am a Machine Learning Engineer dedicated to bridging the gap between complex data and intelligent
+          automation.
+          With expertise in Deep Learning, Computer Vision, and NLP, I specialize in architecting end-to-end AI systems
+          that solve intricate real-world challenges. My approach combines rigorous algorithmic optimization with
+          scalable deployment, ensuring models deliver measurable impact in production. From developing advanced
+          segmentation frameworks like SegVision to streamlining development with MiniGit, I thrive at the
+          intersection of innovation and modular engineering. I am constantly pushing the boundaries of Generative AI
+          and intelligent systems to build an automated, perceptive future.
+        </p>
+
+        <div class="box-container">
+          <div class="box">
+            <p><span>Email:</span> sanyamkatoch10@gmail.com</p>
+            <p><span>Hometown:</span> Palampur, Himachal Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="resumebtn">
+          <a href="assets/resume.pdf" target="_blank" class="btn">
+            <span>Download Resume</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <div id="skillsContainer" class="skills-content">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="projects">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container" id="projectsContainer">
+
+    </div>
+
+    <div class="viewall">
+      <a href="https://github.com/sanyam-katoch10" target="_blank" class="btn">
+        <span>View All on GitHub</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="certificates-section" id="certificates">
+    <h2 class="heading"><i class="fas fa-certificate"></i> My <span>Certifications</span></h2>
+
+    <div class="timeline" id="certificatesContainer">
+
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <h2 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h2>
+
+    <p class="quote">"An investment in knowledge pays the best interest."</p>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="edu-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="content">
+          <h3>B.Tech CSE (Artificial Intelligence &amp; Machine Learning)</h3>
+          <p>School of Computer Science and Engineering </p>
+          <p>Lovely Professional University, Jalandhar, Punjab</p>
+          <h4>2023 - 2027 | Current: 3rd Year</h4>
+          <p class="edu-journey">Specializing in AI & ML with hands-on projects in Deep Learning, Computer Vision, and
+            NLP. Active in open-source contribution and competitive coding.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="edu-icon">
+          <i class="fas fa-school"></i>
+        </div>
+        <div class="content">
+          <h3>Higher Secondary Education</h3>
+          <p>Science Stream | ICSE Board</p>
+          <p>Mount Carmel School, Palampur, Himachal Pradesh</p>
+          <h4>2021 - 2023 | Completed</h4>
+          <p class="edu-journey">Developed a strong foundation in Mathematics and Sciences, sparking an early interest
+            in programming and technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="achievements-section" id="achievements">
+    <h2 class="heading"><i class="fas fa-trophy"></i> Achievements & <span>Highlights</span></h2>
+
+    <div class="achievements-grid" id="achievementsContainer">
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <div class="contact-graphic">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="42e98cd6-561e-4ec6-90e3-3985bc246ef3">
+          <input type="hidden" name="subject" value="New Contact from Portfolio - Sanyam Katoch">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Your Email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone (Optional)">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="message">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+
+          <div class="button-area">
+            <span id="form-status"></span>
+            <button type="submit" class="btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="scroll-spy">
+    <a href="#home" class="spy-item active" data-target="home">
+      <span class="spy-text">HOME</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#about" class="spy-item" data-target="about">
+      <span class="spy-text">ABOUT</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#skills" class="spy-item" data-target="skills">
+      <span class="spy-text">SKILLS</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#projects" class="spy-item" data-target="projects">
+      <span class="spy-text">PROJECTS</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#certificates" class="spy-item" data-target="certificates">
+      <span class="spy-text">CERTS</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#achievements" class="spy-item" data-target="achievements">
+      <span class="spy-text">ACHIEVE</span>
+      <span class="spy-marker"></span>
+    </a>
+    <a href="#contact" class="spy-item" data-target="contact">
+      <span class="spy-text">CONTACT</span>
+      <span class="spy-marker"></span>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Sanyam's Portfolio</h3>
+        <p>Thank you for visiting.<br /><br />Connect me here on socials.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+        <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+        <a href="#certificates"><i class="fas fa-chevron-circle-right"></i> Certificates</a>
+        <a href="#achievements"><i class="fas fa-chevron-circle-right"></i> Achievements</a>
+        <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-envelope"></i> sanyamkatoch10@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9317718369</p>
+        <p><i class="fas fa-map-marked-alt"></i> Lovely Professional University, India</p>
+        <div class="share">
+          <a href="https://www.linkedin.com/in/sanyam-katoch/" class="fab fa-linkedin" target="_blank"
+            aria-label="LinkedIn"></a>
+          <a href="https://github.com/sanyam-katoch10" class="fab fa-github" target="_blank" aria-label="GitHub"></a>
+          <a href="mailto:sanyamkatoch10@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="system-hud">
+      <div class="corner-bracket top-left"></div>
+      <div class="corner-bracket top-right"></div>
+      <div class="corner-bracket bottom-left"></div>
+      <div class="corner-bracket bottom-right"></div>
+
+      <div class="micro-hex left">TEST_V.8.0</div>
+      <div class="micro-hex right">0x4F</div>
+
+
+      <div class="ticker-content">
+
+        <div class="hud-item">
+          <span class="status-dot"></span>
+          <span class="sys-text">SYSTEM ONLINE</span>
+        </div>
+        <div class="hud-item">
+          <span class="decode-text" data-value="Forging Digital Minds">Forging Digital Minds</span>
+          <i class="fas fa-bolt cyber-spark"></i>
+        </div>
+        <div class="hud-item">
+          <span class="dev-label">DEV:</span>
+          <a href="https://github.com/sanyam-katoch10" class="name-glitch" data-text="Sanyam Katoch">Sanyam Katoch</a>
+          <img src="https://flagcdn.com/48x36/in.png" alt="India Flag" class="flag-icon">
+        </div>
+        <div class="hud-item separator-hex">::</div>
+        <div class="hud-item">
+          <span class="sys-text">&copy; 2026</span>
+        </div>
+
+
+        <div class="hud-item">
+          <span class="status-dot"></span>
+          <span class="sys-text">SYSTEM ONLINE</span>
+        </div>
+        <div class="hud-item">
+          <span class="decode-text" data-value="Forging Digital Minds">Forging Digital Minds</span>
+          <i class="fas fa-bolt cyber-spark"></i>
+        </div>
+        <div class="hud-item">
+          <span class="dev-label">DEV:</span>
+          <a href="https://github.com/sanyam-katoch10" class="name-glitch" data-text="Sanyam Katoch">Sanyam Katoch</a>
+          <img src="https://flagcdn.com/48x36/in.png" alt="India Flag" class="flag-icon">
+        </div>
+        <div class="hud-item separator-hex">::</div>
+        <div class="hud-item">
+          <span class="sys-text">&copy; 2026</span>
+        </div>
+
+
+        <div class="hud-item">
+          <span class="status-dot"></span>
+          <span class="sys-text">SYSTEM ONLINE</span>
+        </div>
+        <div class="hud-item">
+          <span class="decode-text" data-value="Forging Digital Minds">Forging Digital Minds</span>
+          <i class="fas fa-bolt cyber-spark"></i>
+        </div>
+        <div class="hud-item">
+          <span class="dev-label">DEV:</span>
+          <a href="https://github.com/sanyam-katoch10" class="name-glitch" data-text="Sanyam Katoch">Sanyam Katoch</a>
+          <img src="https://flagcdn.com/48x36/in.png" alt="India Flag" class="flag-icon">
+        </div>
+        <div class="hud-item separator-hex">::</div>
+        <div class="hud-item">
+          <span class="sys-text">&copy; 2026</span>
+        </div>
+
+
+        <div class="hud-item">
+          <span class="status-dot"></span>
+          <span class="sys-text">SYSTEM ONLINE</span>
+        </div>
+        <div class="hud-item">
+          <span class="decode-text" data-value="Forging Digital Minds">Forging Digital Minds</span>
+          <i class="fas fa-bolt cyber-spark"></i>
+        </div>
+        <div class="hud-item">
+          <span class="dev-label">DEV:</span>
+          <a href="https://github.com/sanyam-katoch10" class="name-glitch" data-text="Sanyam Katoch">Sanyam Katoch</a>
+          <img src="https://flagcdn.com/48x36/in.png" alt="India Flag" class="flag-icon">
+        </div>
+        <div class="hud-item separator-hex">::</div>
+        <div class="hud-item">
+          <span class="sys-text">&copy; 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <canvas id="cursorCanvas"></canvas>
+
+
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/hacker-effects.js"></script>
+
+
+
+
+
+
+
+  <div id="cmd-palette" class="cmd-overlay hidden">
+    <div class="cmd-box">
+      <div class="cmd-header">
+        <span class="cmd-title">root@sanyam:~</span>
+        <span class="cmd-close">×</span>
+      </div>
+      <div class="cmd-body">
+        <div class="cmd-output" id="cmd-output">
+          <div class="cmd-line">Welcome to Sanyam's Terminal. Type <span class="cmd-keyword">help</span> for commands.
+          </div>
+        </div>
+        <div class="cmd-input-line">
+          <span class="prompt">➜</span>
+          <input type="text" id="cmd-input" autocomplete="off" spellcheck="false" autofocus>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="noise-overlay"></div>
+
+</body>
+
+
+</html>
