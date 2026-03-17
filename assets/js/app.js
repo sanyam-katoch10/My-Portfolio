@@ -376,13 +376,13 @@ if (certificatesContainer) {
 const achievementsData = [
   {
     icon: "fas fa-code",
-    title: "Competitive Coding",
-    description: "Active problem solver on platforms like LeetCode and CodeChef, consistently sharpening DSA skills."
+    title: "Competitive Coding (Solved 200+ problems)",
+    description: "Active problem solver on platforms like LeetCode, GeeksforGeeks and CodeChef, consistently sharpening DSA skills."
   },
   {
     icon: "fas fa-laptop-code",
     title: "Open Source Contributor",
-    description: "Contributed to open-source projects on GitHub, collaborating with developers worldwide."
+    description: "Contributed to open-source projects on GitHub, collaborating with various developers."
   },
   {
     icon: "fas fa-trophy",
@@ -392,7 +392,7 @@ const achievementsData = [
   {
     icon: "fas fa-project-diagram",
     title: "3+ End-to-End Projects",
-    description: "Built and deployed full-stack AI/ML projects from concept to production, including web apps on Render and Railway."
+    description: "Built and deployed full-stack AI/ML projects from concept to production, including web apps on Render and Streamlit."
   }
 ];
 
