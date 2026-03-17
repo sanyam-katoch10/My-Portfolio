@@ -198,7 +198,7 @@ const projectsData = [
     name: "BotShield — ML CAPTCHA Refinement System",
     bullets: [
       "ML-powered CAPTCHA refinement system that generates, classifies, and adjusts CAPTCHA difficulty dynamically",
-      "CNN classifier trained on 6,000 labeled images achieving 97% validation accuracy",
+      "CNN classifier trained on 6,000 labeled images achieving 85% validation accuracy",
       "Adaptive Predict → Adjust → Re-generate → Finalize loop that fine-tunes complexity for maximum bot resistance"
     ],
     tags: ["CNN", "TensorFlow", "Keras", "Streamlit", "Python"],
@@ -387,7 +387,7 @@ const achievementsData = [
   {
     icon: "fas fa-trophy",
     title: "Academic Excellence",
-    description: "Maintaining strong academic performance in B.Tech CSE (AI & ML) at Lovely Professional University."
+    description: "Maintaining strong academic performance currently having 8+ CGPA in B.Tech CSE (AI & ML) at Lovely Professional University."
   },
   {
     icon: "fas fa-project-diagram",
