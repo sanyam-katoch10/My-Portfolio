@@ -209,18 +209,15 @@ body.light-mode #bg-grid-layer {
 }
 
 
-/* ===== FLAWLESS SVG ANIME HACKER EYE ===== */
 .cyber-eye-loader {
   position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Scale up the eye loader significantly for a massive "watching" feel */
   width: min(90vw, 900px);
-  /* The SVG viewBox is 500x250, so height is naturally constrained */
   aspect-ratio: 2 / 1;
-  margin-top: -10vh; /* Move it higher to look down on the user */
+  margin-top: -10vh;
 }
 
 .anime-eye-svg {
@@ -3588,7 +3585,7 @@ body.light-mode .cert-vw-btn:hover {
   }
 
   .home-image {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .social-icons {
