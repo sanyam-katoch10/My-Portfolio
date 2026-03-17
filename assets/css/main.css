@@ -1524,7 +1524,7 @@ body.light-mode .btn:hover {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 60%;
   border: 3px solid var(--neon);
   box-shadow: 0 0 40px var(--neon-glow);
   transition: all 0.3s ease;
