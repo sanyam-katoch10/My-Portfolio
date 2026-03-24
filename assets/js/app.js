@@ -204,7 +204,7 @@ const projectsData = [
     tags: ["CNN", "TensorFlow", "Keras", "Streamlit", "Python"],
     image: "assets/images/botshield.png",
     github: "https://github.com/sanyam-katoch10/BOtShield_ML-CAPTCHA-Refinement-System",
-    demo: "https://botshield0captcha-sam.streamlit.app/"
+    demo: "https://bot0shield.streamlit.app/"
   },
   {
     name: "SegVision — PSO Image Segmentation",
